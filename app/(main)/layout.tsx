@@ -8,7 +8,7 @@ export default function HomePageLayout({
       <header>
         <h1 className="bg-purple-200 text-black font-bold text-center text-xl">I&apos;m a header</h1>
       </header>
-      <main className="grow">
+      <main className="grow flex flex-col">
 
       {children}
       </main>
