@@ -20,6 +20,7 @@ export default function ErrorPage({
 
   useEffect(() => {
     const getData = async () => {
+        console.log("fetch")
         const {fields} = await fetchErrorPageContent();
 
         setData(fields)
