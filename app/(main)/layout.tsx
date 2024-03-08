@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   // The metadataBase NEEDS to be an url using a new instance of URL constructor
@@ -21,9 +22,11 @@ export default function HomePageLayout({
   return (
     <>
       <header>
-        <h1 className="bg-purple-200 text-black font-bold text-center text-xl">
-          I&apos;m a header
-        </h1>
+        <Link href="/">
+          <h1 className="bg-purple-200 text-black font-bold text-center text-xl">
+            I&apos;m a header
+          </h1>
+        </Link>
       </header>
       <main className="grow flex flex-col">{children}</main>
       <footer>
